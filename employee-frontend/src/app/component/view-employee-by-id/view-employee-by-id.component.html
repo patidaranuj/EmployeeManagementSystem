@@ -1,0 +1,11 @@
+<h3>Enter the employee Id to View</h3>
+<form name="viewemplpoyeeform" #viewemplpoyeeform="ngForm" (ngSubmit)="viewemployee()">
+<label>Enter Employee Id</label><input type="number" [(ngModel)]="id" name="id">
+<input type="submit" name="view">
+</form>
+<div>
+<b>Employee Id :-   </b>{{employee.id}}<br>
+<b>Employee Name :- </b>{{employee.name}}<br>
+<b>Employee Age  :- </b>{{employee.age}}<br>
+<b>Employee Deprtment :-  </b>{{employee.department}}<br>
+</div>

@@ -1,0 +1,10 @@
+<h3>Enter Employee Details</h3>
+<form name="updateemployeeform" #updateemployeeform="ngForm" (ngSubmit)="updateEmployee()">
+    <label>Employee Id</label><input type="number" [(ngModel)]="employee.id" name="id">
+    <label>Name</label><input type="text" [(ngModel)]="employee.name" name="name">
+    <label>Age</label><input type="number" [(ngModel)]="employee.age" name="age">
+    <label>Department</label><input type="text" [(ngModel)]="employee.department" name="department">
+
+    <input type="submit" name="Add">
+</form>
+
